@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints numbers between 0 and 10
+ * main - prints numbers between 0 and 10 as character
  * Return: 0;
  */
 int main(void)
