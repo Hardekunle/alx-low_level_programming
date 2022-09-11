@@ -1,15 +1,16 @@
 #include <stdio.h>
 /**
- * main - prints numbers between 0 and 10 as character
- * Return: 0;
- */
+* main - prints numbers between 0 and 10 as character
+* Return: 0;
+*/
 int main(void)
 {
-        int number;
+	int number;
 
-        for(number = 0; number < 10; number++)
-                putchar(number);
-        putchar('\n');
+	for (number = 0; number < 10; number++)
+		putchar(number);
 
-        return (0);
+	putchar('\n');
+
+	return (0);
 }
