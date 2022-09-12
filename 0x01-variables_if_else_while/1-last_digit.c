@@ -8,7 +8,6 @@
 int main(void)
 {
 	int n;
-	int quotient;
 	int lastNo;
 
 	srand(time(0));
