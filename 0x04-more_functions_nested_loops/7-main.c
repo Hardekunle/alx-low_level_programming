@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - check the code
  *
@@ -6,6 +7,9 @@
  */
 int main(void)
 {
-    print_most_numbers();
+    print_diagonal(0);
+    print_diagonal(2);
+    print_diagonal(10);
+    print_diagonal(-4);
     return (0);
 }
