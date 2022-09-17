@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *FizzBuzz- print words dynamically
+ *main- print words dynamically
  *Return: void
  */
 int main(void)
