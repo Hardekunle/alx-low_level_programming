@@ -9,7 +9,6 @@ int _atoi(char *s)
 {
 	char val;
 	int i;
-	int positiveCount;
 	int negativeCount;
 	int total;
 	int integerExist;
@@ -18,7 +17,6 @@ int _atoi(char *s)
 	i = 0;
 	total = 0;
 	integerExist = 0;
-	positiveCount = 0;
 	negativeCount = 0;
 	while (val != '\0')
 	{
@@ -34,8 +32,6 @@ int _atoi(char *s)
 			total = total * 10 + numberVal;
 			integerExist = 1;
 		}
-		else if (val == '+')
-			positiveCount += 1;
 		else if (val == '-')
 			negativeCount += 1;
 		else if (integerExist == 1)
@@ -43,7 +39,7 @@ int _atoi(char *s)
 
 		i++;
 	}
-	if (negativeCount > positiveCount)
+	if (negativeCount % 2 == 1)
 		total = -1 * total;
 
 	return (total);
