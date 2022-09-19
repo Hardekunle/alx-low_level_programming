@@ -26,10 +26,9 @@ int _atoi(char *s)
 		val = *(s +  i);
 		asciVal = (int) val;
 		numberVal = asciVal - 48;
-
 		if (numberVal >= 0 && numberVal <= 9)
 		{
-			if (negativeCount % 2 == 1)
+			if *(s + i + 1 == '\0' && negativeCount % 2 == 1)
 				total = -1 * (total * 10 + numberVal);
 			else
 				total = total * 10 + numberVal;
@@ -39,7 +38,6 @@ int _atoi(char *s)
 			negativeCount += 1;
 		else if (integerExist == 1)
 			break;
-
 		i++;
 	}
 	return (total);
