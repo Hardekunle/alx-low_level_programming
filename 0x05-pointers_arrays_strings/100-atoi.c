@@ -29,7 +29,10 @@ int _atoi(char *s)
 
 		if (numberVal >= 0 && numberVal <= 9)
 		{
-			total = total * 10 + numberVal;
+			if (negativeCount % 2 == 1)
+				total = -1 * (total * 10 + numberVal);
+			else
+				total = total * 10 + numberVal;
 			integerExist = 1;
 		}
 		else if (val == '-')
@@ -39,8 +42,5 @@ int _atoi(char *s)
 
 		i++;
 	}
-	if (negativeCount % 2 == 1)
-		total = -1 * total;
-
 	return (total);
 }
