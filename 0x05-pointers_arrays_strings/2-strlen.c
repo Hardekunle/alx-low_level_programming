@@ -18,5 +18,5 @@ int _strlen(char *s)
 		number++;
 		val = *(s + number);
 	}
-	return (number - 1);
+	return (number);
 }
