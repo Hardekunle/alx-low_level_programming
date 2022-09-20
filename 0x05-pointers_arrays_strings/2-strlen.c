@@ -8,7 +8,15 @@
 int _strlen(char *s)
 {
 	int number;
+	char val;
 
-	number = strlen(*s);
-	return (number);
+	val = *s;
+	number = 0;
+
+	while (val != '\0')
+	{
+		number++;
+		val = *(s + number);
+	}
+	return (number - 1);
 }
