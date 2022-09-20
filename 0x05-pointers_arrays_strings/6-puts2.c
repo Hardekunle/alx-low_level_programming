@@ -8,12 +8,14 @@ void puts2(char *str)
 {
 	int len;
 	int i;
+	char val;
 
 	len = 0;
+	val = *str;
 	while (val != '\0')
 	{
 		len++;
-		val = *(s + len);
+		val = *(str + len);
 	}
 
 	i = 0;
